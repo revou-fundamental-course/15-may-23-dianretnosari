@@ -1,1 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="top">
+        <span class="title" style="color:white;"> <strong>Katik</strong></span>
+        <span class="subtitle" style="color:rgb(202, 198, 198);">kalkulator matematik</span>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <br>
+            <div>
+                <h3 style="text-align: center;">Welcome to Katik</h3>
+                <p style="text-align: center;">Hi Sobat, Selamat datang di Katik :]</p>
+                <p style="text-align: center;">Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
+            </div>
 
+            <div class="persegi" style="color:white;"><strong>Persegi</strong></div>
+            
+            <div class="hyperlinkper">
+                <ul>
+                    <li><a href="#luper">Luas Persegi</a></li>
+                    <li><a href="#kelper">Keliling Persegi</a></li>
+                </ul>
+            </div>
+
+            <div class="persegipanjang" style="color:white;"><strong>Persegi Panjang</strong></div>
+
+            <div class="hyperlinkperpan">
+                <ul>
+                    <li><a href="#luperpan">Luas Persegi Panjang</a></li>
+                    <li><a href="#kelperpan">Keliling Persegi Panjang</a></li>
+                </ul>
+            </div>
+
+            <br>
+
+            <!-- PERSEGI -->
+
+            <div id="luper" class="luaspersegi" style="color:white;"><h2>Luas Persegi</h2></div>
+
+            <br>
+
+            <div class="figure">
+                <div class="square"></div>
+            </div>
+
+            <div class="formula-description">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <p style="text-align: center;">L = S x S</p>
+            
+                <P>Dimana:</P>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+            </div>
+
+            <hr>
+
+            <!-- LUAS PERSEGI -->
+
+            <div>
+                <h3 style="text-align: center;">Hitung Luas Persegi</h3>
+                <P>Masukkan nilai sisi [S] disini:</P>
+                <input type="number" id="s" oninput="sisiluaspersegi(), outputluaspersegi()">
+            </div>
+
+            <div id ="lu" class="luperpan-section">
+                <p>Sisi = <span id="sisiluaspersegi"></span></p>
+                <p>Luas = S x S</p>
+                <p>Luas Persegi = <span id="outputluaspersegi"></span></p>
+            </div>
+
+            <br>
+
+                <button style="color:white;" onclick="hidelp()">Hitung</button>
+
+                <br>
+                <br>
+                <br>
+
+                <button style="color:white;" id="resetinput">Reset</button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div id="kelper" class="kelilingpersegi" style="color:white;"><h2>Keliling Persegi</h2></div>
+
+            <br>
+
+            <div class="figure">
+                <div class="square"></div>
+            </div>
+
+            <div class="formula-description">
+                <p>Rumus Keliling Persegi yaitu:</p>
+                <p style="text-align: center;">K = 4 x S</p>
+            
+                <P>Dimana:</P>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+            </div>
+
+            <hr>
+
+            <!-- KELILING PERSEGI -->
+
+            <div>
+                <h3 style="text-align: center;">Hitung Keliling Persegi</h3>
+                <P>Masukkan nilai sisi [S] disini:</P>
+                <input type="number" id="sp" oninput="sisikelilingpersegi(), outputkelilingpersegi()">
+            </div>
+
+            <div id ="kel" class="kelperpan-section">
+                <p>Sisi = <span id="sisikelilingpersegi"></span></p>
+                <p>Keliling = 4 x S</p>
+                <p>Keliling Persegi = <span id="outputkelilingpersegi"></span></p>
+            </div>
+
+            <br>
+                <button style="color:white;" onclick="showlp()">Hitung</button>
+
+                <br>
+                <br>
+                <br>
+
+                <button style="color:white;" onClik="reset()">Reset</button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- PERSEGI PANJANG -->
+
+            <div id="luperpan" class="luaspersegipanjang" style="color:white;"><h2>Luas Persegi Panjang</h2></div>
+
+            <br>
+
+            <div class="figure">
+                <div class="rectangle"></div>
+            </div>
+
+            <div class="formula-description">
+                <p>Rumus Luas Persegi Panjang yaitu:</p>
+                <p style="text-align: center;">L = p x l</p>
+            
+                <P>Dimana:</P>
+                <p>p = Panjang</p>
+                <p>l = Lebar</p>
+                <p>L = Luas</p>
+            </div>
+
+            <hr>
+
+            <!-- LUAS PERSEGI PANJANG-->
+
+            <div>
+                <h3 style="text-align: center;">Hitung Luas Persegi Panjang</h3>
+                <P>Masukkan nilai panjang [p] disini:</P>
+                <input type="number" id="p" oninput="panjangluaspersegipanjang(), lebarluaspersegipanjang(), outputluaspersegipanjang()">
+
+                <P>Masukkan nilai lebar [l] disini:</P>
+                <input type="number" id="l" oninput="panjangluaspersegipanjang(), lebarluaspersegipanjang(), outputluaspersegipanjang()">
+            </div>
+
+            <div id ="lup" class="luperpan-section">
+                <p>Panjang = <span id="panjangluaspersegipanjang"></span></p>
+                <p>Lebar = <span id="lebarluaspersegipanjang"></span></p>
+                <p>Luas = p x l</p>
+                <p>Luas Persegi Panjang = <span id="outputluaspersegipanjang"></span></p>
+            </div>
+
+            <br>
+
+                <button style="color:white;" onclick="hidelpp()">Hitung</button>
+
+                <br>
+                <br>
+                <br>
+
+                <button style="color:white;" onClik="reset()">Reset</button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- KELILING PERSEGI PANJANG-->
+
+            <div id="kelperpan" class="luaspersegipanjang" style="color:white;"><h2>Keliling Persegi Panjang</h2></div>
+
+            <br>
+
+            <div class="figure">
+                <div class="rectangle"></div>
+            </div>
+
+            <div class="formula-description">
+                <p>Rumus Keliling Persegi Panjang yaitu:</p>
+                <p style="text-align: center;">L = [2 x p] + [2 x l]</p>
+            
+                <P>Dimana:</P>
+                <p>p = Panjang</p>
+                <p>l = Lebar</p>
+                <p>K = Keliling</p>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3 style="text-align: center;">Hitung Keliling Persegi Panjang</h3>
+                <P>Masukkan nilai panjang [p] disini:</P>
+                <input type="number" id="w" oninput="panjangpersegipanjang(), lebarpersegipanjang(), outputkelpersegipanjang()">
+
+                <P>Masukkan nilai lebar [lebar] disini:</P>
+                <input type="number" id="h" oninput="panjangpersegipanjang(), lebarpersegipanjang(), outputkelpersegipanjang()">
+            </div>
+
+            <div id ="kelp" class="kelperpan-section">
+                <p>p = <span id="panjangpersegipanjang"></span></p>
+                <p>l = <span id="lebarpersegipanjang"></span></p>
+                <p>Keliling = [2 x p] + [2 x l]</p>
+                <p>Keliling Persegi Panjang = <span id="outputkelpersegipanjang"></span></p>
+            </div>
+
+            <br>
+
+                <button style="color:white;" onclick="showlpp()">Hitung</button>
+
+                <br>
+                <br>
+                <br>
+
+                <button style="color:white;" id="resetinput">Reset</button>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="linkhome">
+                <ul>
+                    <li><a href="#top">Back on Top</a></li>
+                </ul>
+            </div>
+            
+            <br>
+            <br>
+
+        </div>
+
+        <script src="script.js"></script>
+
+        <footer> 
+            <div class="copyright" style="color:white;">copyright 2023 by Dian Retno Sari</div>
+        </footer>
+
+    </main>  
+</body>
+</html>
