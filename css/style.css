@@ -1,1 +1,125 @@
+body {
+    background: lightgray;
+    text-align:center;
+}
 
+header {
+    background: rgb(172, 70, 255);
+    text-align: center;
+    font-size: larger;
+    font-style: oblique;
+    padding: 23px 23px;
+}
+
+footer {
+    background: rgb(172, 70, 255);
+    text-align: center;
+    font-size: large;
+    padding: 20px 20px;
+}
+
+input {
+    width: 170px;
+    box-sizing: border-box;
+    padding:7px;
+}
+
+button {
+    width: 70px;
+    background: rgb(133, 111, 255);
+    border:rgb(222, 222, 255);
+    padding: 10px;
+}
+
+.linkhome {
+    background: rgb(155, 155, 199);
+    text-align: center;
+    padding: 1px 1px; 
+}
+
+.hyperlinkper {
+    background: rgb(225, 225, 255);
+    text-align: center;
+    padding: 1px 1px; 
+}
+
+.hyperlinkperpan {
+    background: rgb(225, 225, 255);
+    text-align: center;
+    padding: 1px 1px; 
+}
+
+.persegi {
+    background: rgb(160, 44, 255);
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.persegipanjang {
+    background: rgb(160, 44, 255);
+    text-align: center;
+    padding: 8px 8px;
+}
+
+.luaspersegi {
+    background: rgb(160, 44, 255);
+    text-align: center;
+    padding: 6px 6px;
+}
+
+.kelilingpersegi {
+    background: rgb(160, 44, 255);
+    text-align: center;
+    padding: 6px 6px;
+}
+
+.luaspersegipanjang {
+    background: rgb(160, 44, 255);
+    text-align: center;
+    padding: 6px 6px;
+}
+
+.kelilingpersegipanjang {
+    background: rgb(160, 44, 255);
+    text-align: center;
+    padding: 6px 6px;
+}
+
+.titile {
+    font-weight: bold;
+    font-size: large;
+}
+
+.subtitile {
+    color: gray;
+    font-size: small;
+}
+
+.card {
+    background:white;
+    margin: 30px;
+    padding: 0px 0px;
+}
+
+.square {
+    border: 4px solid rgb(165, 12, 12);
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    
+}
+
+.rectangle {
+    border: 4px solid rgb(165, 12, 12);
+    margin: auto;
+    width: 150px;
+    height: 80px;
+}
+
+.kelperpan-section {
+    display: none;
+}
+
+.luperpan-section {
+    display: none;
+}
