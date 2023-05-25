@@ -61,15 +61,6 @@ inputs.forEach(input => input.value = '');
 });
 
 
-//let btnClear = document.querySelector('button');
-//let inputs = document.querySelectorAll('input');
-
-//btnClear.addEventListener('click', () => {
-//    inputs.forEach(input => input.value = '');
-//});
-
-
-
 // LUAS PERSEGI
 function sisiluaspersegi(){
     var s = document.getElementById('s').value;
@@ -89,7 +80,6 @@ function outputluaspersegi(){
 
 
 // KELILING PERSEGI
-
 function sisikelilingpersegi(){
     var sp = document.getElementById('sp').value;
    
@@ -108,7 +98,6 @@ function outputkelilingpersegi(){
 
 
 // LUAS PERSEGI PANJANG 
-
 function panjangluaspersegipanjang(){
     var p = document.getElementById('p').value;
    
@@ -136,7 +125,6 @@ function outputluaspersegipanjang(){
 
 
 // KELILING PERSEGI PANJANG 
-
 function panjangpersegipanjang(){
     var w = document.getElementById('w').value;
    
